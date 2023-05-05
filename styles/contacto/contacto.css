@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 90px 20px 0;
+}
+
+.header {
+  background-color: #f5d1d7;
+  height: 150px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-logo {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  margin-right: auto;
+  display: flexbox;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  margin-top: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: min-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+  background-color: #f7c8e0;
+  transition: 0.5s;
+}
+
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+  cursor: pointer;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+header a:focus {
+  color: rgb(243, 39, 192);
+}
+
+.fa-instagram {
+  color: rgb(243, 39, 192);
+  font-size: 20px;
+}
+
+.fa-square-facebook {
+  color: rgb(17, 17, 137);
+  font-size: 20px;
+}
+
+.fa-youtube {
+  color: red;
+  font-size: 20px;
+}
+
+.fa-instagram:hover {
+  color: rgb(243, 118, 228);
+  font-size: 30px;
+}
+
+.fa-square-facebook:hover {
+  color: rgb(8, 8, 46);
+  font-size: 30px;
+}
+
+.fa-youtube:hover {
+  color: rgb(239, 99, 99);
+  font-size: 30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: green solid 1px;
+  color: #4f443e;
+  background-color: #f5d1d7;
+  margin-top: 10px;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 50px;
+}
+
+#copyright_section {
+  background-color: #f7c8e0;
+  font-family: "PT Serif", serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .header {
+    height: 60px;
+  }
+
+  .nav-logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: red;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover {
+    background-color: none;
+    color: #f7c8e0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+}

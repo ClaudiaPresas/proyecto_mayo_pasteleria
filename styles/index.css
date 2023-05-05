@@ -1,26 +1,26 @@
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-}
-
-body {
-  padding: 15px;
+  padding: 0px;
+  margin: 0px;
 }
 
 /*Header- barra navegación y logo*/
+
 #logo {
   width: 7rem;
-  height: auto;
+  height: 7rem;
+  display: flex;
+  margin: 0.5px;
 }
 
-.logo_container {
+.nav_container {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f5d1d7;
-  margin-bottom: 1rem;
   gap: 20px;
-  height: 50px;
+  height: 100px;
 }
 
 .nav_item {
@@ -32,12 +32,10 @@ body {
 
 #carousel_container {
   display: flex;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
 }
 
 .image_container {
-  height: 42rem;
+  height: 30rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,13 +47,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: #f5d1d7;
   height: 4rem;
 }
 
 #card_container {
   display: flex;
+
+  height: 40rem;
   justify-content: space-evenly;
   align-content: center;
 

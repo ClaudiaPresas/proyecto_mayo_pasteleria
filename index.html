@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat tarjetas</title>
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+
     <!--Bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -13,10 +14,8 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <!--Google Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,12 +30,12 @@
   </head>
   <body>
     <header>
-      <nav class="logo_container">
-        <a class="nav_item" href="#">Inicio</a>
-        <a class="nav_item" href="#">Nosotros</a>
+      <nav class="nav_container">
+        <a class="nav_item" href="/">Inicio</a>
+        <a class="nav_item" href="/nosotros.html">Nosotros</a>
         <img id="logo" src="./img/logo-bco-sin-fondo.png" alt="logo-billy" />
-        <a class="nav_item" href="#">Contacto</a>
-        <a class="nav_item" href="#">Sucursales</a>
+        <a class="nav_item" href="/contacto.html">Contacto</a>
+        <a class="nav_item" href="/productos.html">Productos</a>
       </nav>
     </header>
 
@@ -51,12 +50,14 @@
             aria-current="true"
             aria-label="Slide 1"
           ></button>
+
           <button
             type="button"
             data-bs-target="#carousel_container"
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
+
           <button
             type="button"
             data-bs-target="#carousel_container"
@@ -68,7 +69,11 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000">
             <div class="image_container">
-              <img src="img/pastel.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="img/inicio/pastel.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
 
             <div class="carousel-caption d-none d-md-block">
@@ -80,7 +85,7 @@
           <div class="carousel-item active" data-bs-interval="2000">
             <div class="image_container">
               <img
-                src="img/cupcake-color.jpg"
+                src="img/inicio/cupcake-color.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -95,7 +100,7 @@
           <div class="carousel-item active" data-bs-interval="2000">
             <div class="image_container">
               <img
-                src="img/cheesecake-de-frutas.jpg"
+                src="img/inicio/choco-frutos.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -149,7 +154,7 @@
 
       <section class="card">
         <img src="img/torta-chocolate.jpg" alt="Image 2" />
-        <h3>Totas</h3>
+        <h3>Tortas</h3>
 
         <span>
           <p>-Personalizados</p>
