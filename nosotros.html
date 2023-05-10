@@ -11,19 +11,40 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <header>
-    <nav class="logo_container">
-      <a class="navegacion" href="/">Inicio</a>
-      <a class="navegacion" href="/nosotros.html">Nosotros</a>
-      <img id="logo" src="./img/logo-bco-sin-fondo.png" alt="logo-billy" />
-      <a class="navegacion" href="/contacto.html">Contacto</a>
-      <a class="navegacion" href="/productos.html">Productos</a>
+
+  <header class="header">
+    <nav class="nav">
+      <img
+        src="./img/logo-bco-sin-fondo.jpg"
+        class="nav-logo"
+        alt="Pastelería Billy"
+      />
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a class="nav-menu-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-menu-item">
+          <a class="nav-menu-link" href="#">Nosotros</a>
+        </li>
+        <li class="nav-menu-item">
+          <a class="nav-menu-link" href="#">Recetas</a>
+        </li>
+        <li class="nav-menu-item">
+          <a class="nav-menu-link" href="./contacto.html">Contacto</a>
+        </li>
+        <li class="nav-menu-item">
+          <a class="nav-menu-link" href="#sucursales">Sucursales</a>
+        </li>
+      </ul>
     </nav>
   </header>
-  <h2 class="nosotros">Nosotros</h2>
+
   <body>
     <section>
-      <p>Hola! somos Claudia, Mariana, Lohiana y Belén.</p>
+      <p>¡Hola! somos Claudia, Mariana, Lohiana y Belén.</p>
       <p>
         Despues de estudiar pasteleria, decidimos emprender. Comenzamos
         vendiendo desde nuestras casas, y con la ayuda de las redes sociales y
@@ -39,6 +60,7 @@
       </p>
       <p>Queremos que todos prueben las cosas ricas que hacemos!</p>
     </section>
+
     <section id="imagenes">
       <img
         class="cheescake"

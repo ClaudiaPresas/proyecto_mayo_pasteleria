@@ -6,7 +6,7 @@ const expresiones = {
   apellido: /^[a-zA-ZÀ-ÿ\s]{3,16}$/,
   correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
   telefono: /^\d{7,14}$/,
-  comentarios: /^[a-zA-ZÀ-ÿ\s]{20,140}$/,
+  comentarios: /^{20,140}$/,
 };
 
 const campos = {
@@ -25,7 +25,7 @@ const validarFormulario = (e) => {
     case "apellido":
       validarCampo(expresiones.apellido, e.target, "apellido");
       break;
-    case "correo":
+    case "email":
       validarCampo(expresiones.correo, e.target, "correo");
       break;
     case "telefono":
@@ -83,7 +83,7 @@ $inputs.forEach((input) => {
 });
 
 $formulario.addEventListener("submit", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
 
   const $terminos = document.getElementById("terminos");
   if (

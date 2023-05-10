@@ -34,19 +34,19 @@
         </button>
         <ul class="nav-menu">
           <li class="nav-menu-item">
-            <a class="nav-menu-link" href="/">Inicio</a>
+            <a class="nav-menu-link" href="#">Inicio</a>
           </li>
           <li class="nav-menu-item">
-            <a class="nav-menu-link" href="/nosotros.html">Nosotros</a>
+            <a class="nav-menu-link" href="#">Nosotros</a>
           </li>
           <li class="nav-menu-item">
-            <a class="nav-menu-link" href="/">Recetas</a>
+            <a class="nav-menu-link" href="#">Recetas</a>
           </li>
           <li class="nav-menu-item">
-            <a class="nav-menu-link" href="/contacto.html">Contacto</a>
+            <a class="nav-menu-link" href="./contacto.html">Contacto</a>
           </li>
           <li class="nav-menu-item">
-            <a class="nav-menu-link" href="/productos.html">Productos</a>
+            <a class="nav-menu-link" href="#sucursales">Sucursales</a>
           </li>
         </ul>
       </nav>
@@ -55,7 +55,12 @@
     <section class="contactanos" id="contactanos">Contactanos</section>
 
     <main>
-      <form action="#" class="formulario" id="formulario">
+      <form
+        class="formulario"
+        id="formulario"
+        action="https://formsubmit.co/lohiana@gmail.com"
+        method="POST"
+      >
         <section class="formulario__grupo" id="grupo__nombre">
           <label class="formulario__label">Nombre</label>
           <section class="formulario__grupo-input">
@@ -98,7 +103,7 @@
             <input
               type="email"
               class="formulario__input"
-              name="correo"
+              name="email"
               id="correo"
               placeholder="correo@correo.com"
             />
@@ -135,7 +140,7 @@
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </section>
           <p class="formulario__input-error">
-            El comentario debe tener minimo 20 caracteres.
+            El formulario no puede estar vacío.
           </p>
         </section>
 

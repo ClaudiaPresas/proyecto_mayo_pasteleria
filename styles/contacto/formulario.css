@@ -33,7 +33,7 @@ main {
 }
 
 .formulario__grupo-input {
-  position: relative;
+  position: static;
 }
 
 .formulario__input {
