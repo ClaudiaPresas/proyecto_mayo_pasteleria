@@ -324,11 +324,16 @@ header a:focus {
 
   .nav-menu-item {
     line-height: 70px;
+    background-color: rgb(222, 94, 94);
   }
 
   .nav-menu-link:hover {
     background-color: none;
     color: #b93c7d;
+  }
+
+  .nav-menu-link {
+    background-color: rgb(222, 94, 94);
   }
 
   .nav-toggle {
