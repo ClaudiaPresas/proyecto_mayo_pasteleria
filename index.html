@@ -32,11 +32,42 @@
       src="https://kit.fontawesome.com/426270a219.js"
       crossorigin="anonymous"
     ></script>
+
+    <script defer src="./js/navToggle.js"></script>
   </head>
 
   <body>
-    <header>
-      <nav class="navbar-container">
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="./img/logo-bco-sin-fondo.png"
+          class="nav-logo"
+          alt="Pastelería Billy"
+        />
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#">Recetas</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="./contacto.html">Contacto</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#sucursales">Sucursales</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--  <header>
+     <nav class="navbar-container">
         <a class="navbar-item" href="/">Inicio</a>
         <a class="navbar-item" href="/productos.html">Productos</a>
         <img
@@ -47,7 +78,7 @@
         <a class="navbar-item" href="/nosotros.html">Sobre Nosotros</a>
         <a class="navbar-item" href="/contacto.html">Contacto</a>
       </nav>
-    </header>
+    </header>-->
 
     <main class="main-container">
       <section class="banner-container"></section>
@@ -62,7 +93,7 @@
             <span class="card-imagen-container">
               <img
                 class="card-imagen"
-                src="./img/inicio/pastel.jpg"
+                src="./img/inicio/torta-choco-frutilla.jpg"
                 alt="Tortas"
               />
             </span>
@@ -71,7 +102,7 @@
               <li>-Casamientos</li>
               <li>-Personalizadas</li>
               <li>-Simples</li>
-              <li>y mas...</li>
+              <a class="boton-card" href="./productos.html">y mas</a>
             </ul>
           </article>
 
@@ -81,7 +112,7 @@
             <span class="card-imagen-container">
               <img
                 class="card-imagen"
-                src="./img/inicio/cupcakes-choco.jpg"
+                src="./img/inicio/cupcakes-color.jpg"
                 alt="Cupcakes"
               />
             </span>
@@ -90,7 +121,7 @@
               <li>-Personalizados</li>
               <li>-Rellenos</li>
               <li>-Simples</li>
-              <li>y mas...</li>
+              <a class="boton-card" href="./productos.html">y mas</a>
             </ul>
           </article>
 
@@ -109,7 +140,7 @@
               <li>-Avena</li>
               <li>-Sin gluten</li>
               <li>-Personalizadas</li>
-              <li>y mas...</li>
+              <a class="boton-card" href="./productos.html">y mas</a>
             </ul>
           </article>
 
@@ -119,7 +150,7 @@
             <span class="card-imagen-container">
               <img
                 class="card-imagen"
-                src="./img/inicio/porsion-torta-de-chocolate.jpg"
+                src="./img/inicio/pastel-chocolate.jpg"
                 alt="#"
               />
             </span>
@@ -128,7 +159,7 @@
               <li>-Lemon Pie</li>
               <li>-Brownie</li>
               <li>-Tiramisu</li>
-              <li>y mas...</li>
+              <a class="boton-card" href="./productos.html">y mas</a>
             </ul>
           </article>
 
@@ -137,9 +168,15 @@
               <h4>Redes sociales</h4>
 
               <span class="iconos-container">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+                <a href="https://www.youtube.com" target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
               </span>
             </section>
 
