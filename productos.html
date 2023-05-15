@@ -5,31 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productos</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/productos.css" />
 
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" />
+
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Simonetta&display=swap"
       rel="stylesheet"
     />
 
+    <!-- FONT AWESOME -->
     <script
-      src="https://kit.fontawesome.com/65637f37f0.js"
+      src="https://kit.fontawesome.com/426270a219.js"
       crossorigin="anonymous"
     ></script>
+
+    <script defer src="./js/index.js"></script>
   </head>
 
   <body>
-    <header>
-      <section>
-        <img id="logo" src="./img/logo-bco-sin-fondo.png" alt="logo-billy" />
-      </section>
-      <nav class="logo_container">
-        <a class="navegacion" href="#">Inicio</a>
-        <a class="navegacion" href="#">Productos</a>
-        <a class="navegacion" href="#">Nosotros</a>
-        <a class="navegacion" href="#">Contacto</a>
+    <header class="header">
+      <nav class="nav">
+        <span>
+          <img
+            src="./img/logo-bco-sin-fondo.png"
+            class="nav-logo"
+            alt="Pastelería Billy"
+        /></span>
+
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="./productos.html">Productos</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="./contacto.html">Contacto</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="./contacto.html#sucursales"
+              >Sucursales</a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -57,6 +88,7 @@
               alt="cookies-img"
             />
           </section>
+
           <section class="productos-item">
             <article class="lista">
               <h3>Cupcakes</h3>
@@ -117,21 +149,23 @@
       </section>
     </main>
 
-    <footer>
-      <h2>Redes sociales</h2>
-      <span>
-        <a href="https://www.instagram.com/billypasteleria" target="_blank"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a
-          href="https://www.facebook.com/billypasteleria/?locale=es_LA"
-          target="_blank"
-          ><i class="fa-brands fa-square-facebook"></i
-        ></a>
-        <a href="https://www.youtube.com" target="_blank"
-          ><i class="fa-brands fa-youtube"></i
-        ></a>
-      </span>
+    <footer class="footer-container">
+      <section class="footer-elementos-container">
+        <h4>Redes sociales</h4>
+
+        <span class="iconos-container">
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </span>
+      </section>
+
       <p>&copy;Copyright 2023 Pastelería Billy</p>
     </footer>
   </body>

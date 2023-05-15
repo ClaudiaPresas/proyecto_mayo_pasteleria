@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Nosotros</title>
     <link rel="stylesheet" href="./styles/nosotros.css" />
-  
-    <script defer src="./js/navToggle.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <script defer src="./js/index.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Simonetta&display=swap"
       rel="stylesheet"
@@ -18,37 +19,42 @@
     ></script>
   </head>
 
-  <header class="header">
-    <nav class="nav">
-      <img
-        src="./img/logo-bco-sin-fondo.png"
-        class="nav-logo"
-        alt="Pastelería Billy"
-      />
-      <button class="nav-toggle" aria-label="Abrir menú">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul class="nav-menu">
-        <li class="nav-menu-item">
-          <a class="nav-menu-link" href="#">Inicio</a>
-        </li>
-        <li class="nav-menu-item">
-          <a class="nav-menu-link" href="#">Nosotros</a>
-        </li>
-        <li class="nav-menu-item">
-          <a class="nav-menu-link" href="#">Recetas</a>
-        </li>
-        <li class="nav-menu-item">
-          <a class="nav-menu-link" href="./contacto.html">Contacto</a>
-        </li>
-        <li class="nav-menu-item">
-          <a class="nav-menu-link" href="#sucursales">Sucursales</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
   <body>
+    <header class="header">
+      <nav class="nav">
+        <span>
+          <img
+            src="./img/logo-bco-sin-fondo.png"
+            class="nav-logo"
+            alt="Pastelería Billy"
+        /></span>
+
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="./productos.html">Productos</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="./contacto.html">Contacto</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="./contacto.html#sucursales"
+              >Sucursales</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <section>
       <p>¡Hola! somos Claudia, Mariana, Lohiana y Belén.</p>
       <p>
@@ -77,19 +83,23 @@
       <img class="macarons" src="./img/nosotros/macarons.jpg" alt="macarons" />
     </section>
 
-    <footer>
-      <h2>Redes sociales</h2>
-      <span>
-        <a href="https://www.instagram.com" target="_blank"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="https://www.facebook.com" target="_blank"
-          ><i class="fa-brands fa-square-facebook"></i
-        ></a>
-        <a href="https://www.youtube.com" target="_blank"
-          ><i class="fa-brands fa-youtube"></i
-        ></a>
-      </span>
+    <footer class="footer-container">
+      <section class="footer-elementos-container">
+        <h4>Redes sociales</h4>
+
+        <span class="iconos-container">
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </span>
+      </section>
+
       <p>&copy;Copyright 2023 Pastelería Billy</p>
     </footer>
   </body>

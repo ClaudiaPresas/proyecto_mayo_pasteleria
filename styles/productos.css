@@ -1,107 +1,17 @@
-* {
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-}
-
-header {
-  background-color: #f5d1d7;
-  padding: 1rem 2rem;
-  position: static;
-  font-size: 1.5rem;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  background-color: #f5d1d7;
-  margin-top: 10px;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem 0.1rem;
-}
-
-header a {
-  text-decoration: none;
-  color: black;
-}
-header a:hover {
-  color: white;
-  font-weight: bold;
-}
-
-header a:focus {
-  color: rgb(243, 39, 192);
-}
-
-#logo {
-  width: 12rem;
-  height: auto;
-}
-
-.fa-instagram {
-  color: rgb(243, 39, 192);
-  font-size: 20px;
-}
-
-.fa-square-facebook {
-  color: rgb(17, 17, 137);
-  font-size: 20px;
-}
-
-.fa-youtube {
-  color: red;
-  font-size: 20px;
-}
-
-.fa-instagram:hover {
-  color: rgb(243, 118, 228);
-  font-size: 30px;
-}
-
-.fa-square-facebook:hover {
-  color: rgb(8, 8, 46);
-  font-size: 30px;
-}
-
-.fa-youtube:hover {
-  color: rgb(239, 99, 99);
-  font-size: 30px;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  border: green solid 1px;
-  color: #4f443e;
-  background-color: #f5d1d7;
-  margin-top: 10px;
-}
-
-span {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  height: 50px;
-}
-
-#copyright_section {
-  background-color: #f7c8e0;
-  font-family: "PT Serif", serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background: #fff;
-  color: #000;
-  margin: 1rem;
+  margin-top: 150px;
+}
+
+main {
+  padding: 30px 50px;
+}
+
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .productos-contenedor {
@@ -109,41 +19,66 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: "Playfair Display", serif;
-}
 
-.productos-item {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin: 1rem;
-}
-
-.recetas-img {
-  height: auto;
-  padding: 3rem;
-  border-radius: 3px;
-}
-
-.lista {
-  width: 40%;
-  padding: 1rem;
-}
-
-.navegacion {
-  padding: 10px;
-}
-
-.contenedor-principal {
-  width: 90%;
+  gap: 40px;
+  padding: 20px 0;
   max-width: 800px;
-  margin: 25px auto;
-  padding: 10px 40px;
   border-radius: 10px;
   border: 2px solid #f7c8e0;
   box-shadow: 0 2px 10px #f7c8e0, 0 2px 10px #f7c8e0;
 }
 
-main {
-  padding: 20px;
+.productos-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 40px;
+}
+
+.recetas-img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .recetas-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  body {
+    margin-top: 50px;
+  }
+
+  main {
+    padding: 30px 20px;
+  }
+
+  .productos-item {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .lista {
+    width: 100%;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+  }
 }

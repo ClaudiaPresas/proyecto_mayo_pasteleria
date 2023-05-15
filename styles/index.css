@@ -1,114 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: #fae2e6;
   color: #4f443e;
 }
-
-/* NAVBAR ------------------------------------- */
-
-.header {
-  background-color: #fae2e6;
-  height: 100px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.nav-link {
-  color: #000;
-  text-decoration: none;
-}
-
-.nav-logo {
-  width: 120px;
-  height: 120px;
-  margin-left: 20px;
-  margin-right: auto;
-  display: flexbox;
-}
-
-.nav-menu {
-  display: flex;
-  margin-right: 40px;
-  margin-top: 40px;
-  list-style: none;
-}
-
-.nav-menu-item {
-  font-size: 18px;
-  margin: 0 10px;
-  line-height: 80px;
-  text-transform: uppercase;
-  width: min-content;
-}
-
-.nav-menu-link {
-  padding: 8px 12px;
-  border-radius: 3px;
-}
-
-.nav-toggle {
-  color: white;
-  background: none;
-  border: none;
-  font-size: 30px;
-  padding: 0 20px;
-  line-height: 60px;
-  display: none;
-  cursor: pointer;
-}
-
-header a {
-  text-decoration: none;
-  color: black;
-}
-
-header a:hover {
-  color: rgb(243, 39, 192);
-  font-weight: bold;
-  transition: 0.5s;
-}
-
-header a:focus {
-  color: rgb(243, 39, 192);
-}
-
-/*.navbar-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1.3rem;
-  height: 3rem;
-  gap: 2rem;
-}
-
-.navbar-item,
-.navbar-item:hover,
-.navbar-item:active {
-  text-decoration: none;
-  font-size: 19px;
-  color: inherit;
-}
-
-.navbar-item:hover {
-  transition: 0.7s;
-  color: rgb(100, 240, 240);
-}
-
-#logo {
-  height: 7rem;
-  width: 7rem;
-  z-index: 20;
-  background-color: transparent;
-}*/
 
 /* BODY ------------------------------------- */
 
@@ -117,6 +11,7 @@ header a:focus {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  background-color: #fae2e6;
 }
 
 .banner-container {
@@ -208,137 +103,11 @@ header a:focus {
   border-radius: 15px;
   transition: all 0.4s;
   text-decoration: none;
+  margin-bottom: 1rem;
 }
 
 .boton-card:hover {
   background-color: rgba(237, 189, 224, 0.896);
   color: white;
   font-weight: bold;
-}
-
-/* FOOTER------------------------------------- */
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  margin-bottom: 0.2rem;
-  gap: 1rem;
-}
-
-.footer-container p {
-  font-size: 10px;
-}
-
-.footer-elementos-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  gap: 0.5rem;
-}
-
-.iconos-container {
-  display: flex;
-  gap: 1rem;
-  min-height: 40px;
-}
-
-.fa-instagram {
-  color: rgb(243, 39, 192);
-  font-size: 30px;
-}
-
-.fa-square-facebook {
-  color: rgb(17, 17, 137);
-  font-size: 30px;
-}
-
-.fa-youtube {
-  color: red;
-  font-size: 30px;
-}
-
-.fa-instagram:hover {
-  color: rgb(243, 118, 228);
-
-  font-size: 35px;
-  transition: 0.2s ease-out;
-}
-
-.fa-square-facebook:hover {
-  color: rgb(8, 8, 46);
-
-  font-size: 35px;
-  transition: 0.2s ease-out;
-}
-
-.fa-youtube:hover {
-  color: rgb(239, 99, 99);
-
-  font-size: 35px;
-  transition: 0.2s ease-out;
-}
-
-/*RESPONSIVE*/
-@media (max-width: 768px) {
-  body {
-    padding-top: 60px;
-  }
-
-  .header {
-    height: 60px;
-  }
-
-  .nav-logo {
-    width: 65px;
-    height: 65px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-    background-color: #fae2e6;
-    position: fixed;
-    left: 0;
-    top: 25px;
-    width: 100%;
-    padding: 20px 0;
-    height: calc(100% - 60px);
-    overflow-y: auto;
-    left: 100%;
-    transition: left 0.3s;
-  }
-
-  .nav-menu-item {
-    line-height: 70px;
-    background-color: rgb(222, 94, 94);
-  }
-
-  .nav-menu-link:hover {
-    background-color: none;
-    color: #b93c7d;
-  }
-
-  .nav-menu-link {
-    background-color: rgb(222, 94, 94);
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-menu_visible {
-    left: 0;
-  }
-
-  .nav-toggle:focus:not(:focus-visible) {
-    outline: none;
-  }
 }
