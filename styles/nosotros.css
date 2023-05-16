@@ -1,5 +1,5 @@
-.nosotros {
-  background-color: #f7c8e0;
+section {
+padding-top: 3rem;
   font-family: "PT Serif", serif;
 }
 p {
@@ -10,15 +10,27 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  
 }
 .cupcakes {
   border-radius: 10%;
+  box-shadow: 0 2px 10px #828282, 0 2px 10px #f7c8e0; 
+  border: 2px solid #f7c8e0;
+  
+
 }
 
 .cheescake {
   border-radius: 10%;
+  box-shadow: 0 2px 10px #f7c8e0, 0 2px 10px #f7c8e0;
+  border: 2px solid #f7c8e0;
+
+  
 }
 
 .macarons {
   border-radius: 10%;
+  box-shadow: 0 2px 10px #f7c8e0, 0 2px 10px #f7c8e0;
+  border: 2px solid #f7c8e0;
+  
 }
