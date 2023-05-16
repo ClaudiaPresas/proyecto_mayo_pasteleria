@@ -2,11 +2,12 @@ const $formulario = document.getElementById("formulario");
 const $inputs = document.querySelectorAll("#formulario input")
 
 const expresiones = {
-    nombre: /^[a-zA-Z0-9\_\-]{3,16}$/, 
-    apellido: /^[a-zA-ZÀ-ÿ\s]{3,16}$/, 
-    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, 
-    telefono: /^\d{7,14}$/, 
+    nombre: /^[a-zA-Z0-9\_\-]{3,16}$/,
+    apellido: /^[a-zA-ZÀ-ÿ\s]{3,16}$/,
+    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    telefono: /^\d{7,14}$/,
     comentarios: /^[a-zA-ZÀ-ÿ\s(),!¡¿?.]{20,140}$/
+
 }
 
 const campos = {
@@ -18,27 +19,27 @@ const campos = {
 }
 
 const validarFormulario = (e) => {
-    switch(e.target.name) {
+    switch (e.target.name) {
         case "nombre":
             validarCampo(expresiones.nombre, e.target, "nombre");
-        break;
+            break;
         case "apellido":
             validarCampo(expresiones.apellido, e.target, "apellido");
-        break;
-        case "correo":
+            break;
+        case "email":
             validarCampo(expresiones.correo, e.target, "correo");
-        break;
+            break;
         case "telefono":
             validarCampo(expresiones.telefono, e.target, "telefono");
-        break;
+            break;
         case "comentarios":
             validarCampo(expresiones.comentarios, e.target, "comentarios");
-        break;
+            break;
     }
 }
 
 const validarCampo = (expresion, input, campo) => {
-    if (expresion.test(input.value)){
+    if (expresion.test(input.value)) {
         document.getElementById(`grupo__${campo}`).classList.remove("formulario__grupo-incorrecto");
         document.getElementById(`grupo__${campo}`).classList.add("formulario__grupo-correcto");
         document.querySelector(`#grupo__${campo} i`).classList.remove("fa-times-circle");
@@ -47,14 +48,14 @@ const validarCampo = (expresion, input, campo) => {
         campos[campo] = true;
         console.log("Funciona");
     } else {
-           document.getElementById(`grupo__${campo}`).classList.add("formulario__grupo-incorrecto");
-           document.getElementById(`grupo__${campo}`).classList.remove("formulario__grupo-correcto");
-           document.querySelector(`#grupo__${campo} i`).classList.add("fa-times-circle");
-           document.querySelector(`#grupo__${campo} i`).classList.remove("fa-check-circle");
-           document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add("formulario__input-error-activo");
-           campos[campo] = false;
-           console.log("Funciona");
-        }
+        document.getElementById(`grupo__${campo}`).classList.add("formulario__grupo-incorrecto");
+        document.getElementById(`grupo__${campo}`).classList.remove("formulario__grupo-correcto");
+        document.querySelector(`#grupo__${campo} i`).classList.add("fa-times-circle");
+        document.querySelector(`#grupo__${campo} i`).classList.remove("fa-check-circle");
+        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add("formulario__input-error-activo");
+        campos[campo] = false;
+        console.log("Funciona");
+    }
 }
 
 $inputs.forEach((input) => {
@@ -67,8 +68,8 @@ $formulario.addEventListener("submit", (e) => {
     e.preventDefault();
 
     const $terminos = document.getElementById("terminos");
-    if(campos.nombre && campos.apellido && campos.correo && campos.telefono && campos.comentarios && $terminos.checked) {
-     
+    if (campos.nombre && campos.apellido && campos.correo && campos.telefono && campos.comentarios && $terminos.checked) {
+
         $formulario.submit()
         document.getElementById("formulario__mensaje-exito").classList.add("formulario__mensaje-exito-activo");
         setTimeout(() => {
@@ -77,7 +78,7 @@ $formulario.addEventListener("submit", (e) => {
 
         }, 3000);
 
-        document.querySelectorAll(".formulario__grupo--correcto").forEach ((icono) => {
+        document.querySelectorAll(".formulario__grupo--correcto").forEach((icono) => {
             icono.classList.remove("formulario__grupo--correcto");
         });
 
