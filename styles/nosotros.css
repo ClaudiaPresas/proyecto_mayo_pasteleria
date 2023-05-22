@@ -1,6 +1,5 @@
 section {
 padding-top: 3rem;
-  font-family: "PT Serif", serif;
 }
 p {
   margin: 1rem;
@@ -25,25 +24,17 @@ p {
   rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-  
-
-
-
 .cheescake {
   border-radius: 10%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-  
-
-
 .macarons {
   border-radius: 10%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
   rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
 
 @media( max-width:565px){
  
