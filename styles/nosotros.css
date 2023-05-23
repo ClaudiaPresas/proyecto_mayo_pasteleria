@@ -5,6 +5,8 @@ p {
   margin: 1rem;
   font-family: "Poppins", sans-serif;
 }
+h2 { margin: 1rem;
+  font-family: "Poppins", sans-serif;}
 #imagenes {
   display: flex;
   align-items: center;
